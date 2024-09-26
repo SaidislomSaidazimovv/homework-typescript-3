@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahsulotlar Ro'yxati</title>
+    <link rel="stylesheet" href="/src/ts/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mahsulotlarni Ro'yxatga olish</h1>
+      <form id="product-form">
+        <input
+          type="text"
+          id="product-name"
+          placeholder="Mahsulot nomi"
+          required
+        />
+        <input type="number" id="product-price" placeholder="Narxi" required />
+        <input type="text" id="product-type" placeholder="Turi" required />
+        <input
+          type="text"
+          id="product-unit"
+          placeholder="O'lchov birligi"
+          required
+        />
+        <input type="date" id="product-date" required />
+        <input
+          type="text"
+          id="received-by"
+          placeholder="Kim tomonidan kelgani"
+          required
+        />
+        <button type="submit">Mahsulot qo'shish</button>
+      </form>
+
+      <input type="text" id="search" placeholder="Mahsulot qidirish..." />
+
+      <table id="product-list">
+        <thead>
+          <tr>
+            <th>Nomi</th>
+            <th>Narxi</th>
+            <th>Turi</th>
+            <th>O'lchov birligi</th>
+            <th>Kelgan sana</th>
+            <th>Kim tomonidan kelgani</th>
+          </tr>
+        </thead>
+        <tbody id="product-rows"></tbody>
+      </table>
+    </div>
+
+    <script src="./build/js/main.js"></script>
+  </body>
+</html>
